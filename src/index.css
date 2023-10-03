@@ -10,7 +10,9 @@
   }
 
   body {
-    font-family: 'Mulish', sans-serif;
+    font-family: 'Segoe UI', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgb(102, 96, 212) 0%, rgb(106, 106, 219) 35%, rgba(0,212,255,1) 100%);
   }
