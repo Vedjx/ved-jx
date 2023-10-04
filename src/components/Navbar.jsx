@@ -25,7 +25,7 @@ const Navbar = () => {
         <div className='flex justify-between items-center z-50 w-[1280px] relative mx-auto'>
 
           <div className='pl-5'>
-          <Link onClick={() => setMobile(!mobile)} className="cursor-pointer" to="/" spy={true} smooth={true} offset={0} duration={500}>
+          <Link onClick={() => setMobile(false)} className="cursor-pointer" to="/" spy={true} smooth={true} offset={0} duration={500}>
             <img className="min-w-[70px] w-[70px] cursor-pointer" src={WhiteLogo} />
           </Link>
           </div>
