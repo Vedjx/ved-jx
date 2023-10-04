@@ -1,5 +1,5 @@
 import React from 'react'
-import HeroImage from '../assets/hero_image.png';
+import HeroImage from '../assets/hero_image.webp';
 
 const Hero = () => {
   return (
@@ -8,7 +8,7 @@ const Hero = () => {
         <h1>Ved.jx</h1>
       </div>
 
-      <div className='min-w-[500px] md:w-1/2 w-full'>
+      <div className='md:w-1/2 w-full'>
         <img src={HeroImage} />
       </div>
     </div>

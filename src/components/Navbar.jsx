@@ -17,7 +17,7 @@ const Navbar = () => {
 
   window.addEventListener('scroll', handleScroll);
   return (
-    <div className={`text-3xl ${color ? 'bg-[#99ccff]' : ''} text-[#09005d] duration-150 w-full h-[90px] flex justify-between items-center fixed z-50 mx-auto`}>
+    <div className={`text-3xl ${color ? 'bg-[#99ccff]/80' : ''} text-[#09005d] duration-150 w-full h-[90px] flex justify-between items-center fixed z-50 mx-auto`}>
       <div className='flex justify-between items-center z-50 w-[1280px] relative mx-auto'>
 
         <div className='pl-5'>
