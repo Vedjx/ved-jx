@@ -13,5 +13,9 @@
   body {
     font-family: 'Raleway', sans-serif;    -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background-image: linear-gradient(to right top, #91b3fa, #6b87da, #4a5cb8, #2d3395, #0f0370);
+  }
+
+  .gradBG {
+    background-image: linear-gradient(to left top, #91b3fa, #6b87da, #4a5cb8, #2d3395, #0f0370);
+
   }

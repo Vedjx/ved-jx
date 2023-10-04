@@ -17,12 +17,13 @@ const Navbar = () => {
   }
 
   window.addEventListener('scroll', handleScroll);
+
   return (
-    <div className={`text-3xl ${color ? 'bg-[#dbe4fe]/90' : 'bg-[#99ccff]/0 text-white'} duration-300 text-[#09005d] w-full h-[90px] flex justify-between items-center fixed z-50 mx-auto`}>
+    <div className={`text-3xl ${color ? 'bg-[#565cf2]/90' : 'bg-[#99ccff]/0 text-white'} duration-300  text-white w-full md:h-[90px] h-[70px] flex justify-between items-center fixed z-50 mx-auto`}>
       <div className='flex justify-between items-center z-50 w-[1280px] relative mx-auto'>
 
         <div className='pl-5'>
-          <img className="min-w-[70px] w-[70px] cursor-pointer" src={color ? BlackLogo : WhiteLogo} />
+          <img className="min-w-[70px] w-[70px] cursor-pointer" src={WhiteLogo} />
         </div>
 
         <div className='md:flex justify-between items-center pr-5 text-[20px] font-semibold w-[400px] hidden select-none'>
