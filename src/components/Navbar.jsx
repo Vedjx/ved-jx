@@ -1,5 +1,6 @@
 import { useState }from 'react'
-import logo from '../assets/black.png';
+import BlackLogo from '../assets/black.png';
+import WhiteLogo from '../assets/white.png'
 import { Icon } from '@iconify/react';
 
 const Navbar = () => {
@@ -17,11 +18,11 @@ const Navbar = () => {
 
   window.addEventListener('scroll', handleScroll);
   return (
-    <div className={`text-3xl ${color ? 'bg-[#99ccff]/80' : ''} text-[#09005d] duration-150 w-full h-[90px] flex justify-between items-center fixed z-50 mx-auto`}>
+    <div className={`text-3xl ${color ? 'bg-[#99ccff]/80' : 'bg-[#99ccff]/0 text-white'} duration-300 text-[#09005d] w-full h-[90px] flex justify-between items-center fixed z-50 mx-auto`}>
       <div className='flex justify-between items-center z-50 w-[1280px] relative mx-auto'>
 
         <div className='pl-5'>
-          <img className="min-w-[70px] w-[70px] cursor-pointer" src={logo} />
+          <img className="min-w-[70px] w-[70px] cursor-pointer" src={color ? BlackLogo : WhiteLogo} />
         </div>
 
         <div className='md:flex justify-between items-center pr-5 text-[20px] font-semibold w-[400px] hidden select-none'>
