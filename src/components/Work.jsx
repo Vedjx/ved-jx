@@ -1,6 +1,6 @@
 const Work = () => {
   return (
-    <div className="w-full h-screen">
+    <div id="work" className="w-full h-screen bg-white">
       Work
     </div>
   )

@@ -2,7 +2,7 @@ import HeroImage from '../assets/hero_image.webp';
 
 const Hero = () => {
   return (
-    <div className='w-full h-screen flex justify-center items-center gradBG'>
+    <div id="/" className='w-full h-[70vh] flex justify-center items-center'>
       <div className='grid grid-cols-1 md:grid-cols-2 gap-y-10 max-w-[1240px] mx-auto'>
         <div className='text-[70px] font-extrabold text-[#eaeff5] flex justify-center md:items-start flex-col md:text-start w-full text-center drop-shadow-lg px-5'>
           <h1>Ved.<span className='text-red-500'>jx</span></h1>
