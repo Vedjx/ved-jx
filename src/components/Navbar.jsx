@@ -2,6 +2,9 @@ import { useState }from 'react'
 import WhiteLogo from '../assets/white.png'
 import { Icon } from '@iconify/react';
 import { Link } from 'react-scroll';
+import { motion } from "framer-motion"
+
+
 
 const Navbar = () => {
 
