@@ -31,11 +31,11 @@ const Navbar = () => {
           </div>
 
           <div className='md:flex justify-between items-center pr-5 text-[20px] font-semibold w-[480px] hidden select-none'>
-            <Link className="cursor-pointer" to="/" spy={true} smooth={true} offset={0} duration={500}>Home</Link>
-            <Link className="cursor-pointer" to="about" spy={true} smooth={true} offset={0} duration={500}>About</Link>
-            <Link className="cursor-pointer" to="services" spy={true} smooth={true} offset={0} duration={500}>Services</Link>
-            <Link className="cursor-pointer" to="work" spy={true} smooth={true} offset={0} duration={500}>Our Work</Link>
-            <Link className="cursor-pointer" to="contact" spy={true} smooth={true} offset={0} duration={500}>Contact</Link>
+            <Link onClick={() => setMobile(!mobile)} className="cursor-pointer" to="/" spy={true} smooth={true} offset={0} duration={500}>Home</Link>
+            <Link onClick={() => setMobile(!mobile)} className="cursor-pointer" to="about" spy={true} smooth={true} offset={0} duration={500}>About</Link>
+            <Link onClick={() => setMobile(!mobile)} className="cursor-pointer" to="services" spy={true} smooth={true} offset={0} duration={500}>Services</Link>
+            <Link onClick={() => setMobile(!mobile)} className="cursor-pointer" to="work" spy={true} smooth={true} offset={0} duration={500}>Our Work</Link>
+            <Link onClick={() => setMobile(!mobile)} className="cursor-pointer" to="contact" spy={true} smooth={true} offset={0} duration={500}>Contact</Link>
           </div>
 
           <div className='flex md:hidden pr-5'>
@@ -47,7 +47,7 @@ const Navbar = () => {
 
       {
         mobile ? 
-        <div className='z-10 fixed top-[70px] bg-[#13153f] h-[400px] text-[25px] font-semibold w-full flex flex-col text-white justify-center items-center'>
+        <div className='z-10 fixed top-[70px] bg-[#13153f] h-[400px] text-[25px] font-semibold w-full flex flex-col text-white justify-center items-center md:hidden'>
             <h1 className=' w-full border-b-2 border-[#6b8cf5]'>
               <Link onClick={() => setMobile(!mobile)} className="cursor-pointer ml-3" to="/" spy={true} smooth={true} offset={0} duration={500}>Home</Link>
             </h1>
