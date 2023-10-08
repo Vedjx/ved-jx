@@ -9,7 +9,7 @@ const Navbar = () => {
   const [mobile, setMobile] = useState(false);
 
   const handleScroll = () => {
-    if (window.scrollY >= 90) {
+    if (window.scrollY >= 60) {
       setColor(true);
     }
     else {
@@ -21,7 +21,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div className={`text-3xl ${color || mobile ? 'md:bg-[#565cf2]/90 bg-[#13153f] backdrop-blur-sm' : 'bg-[#99ccff]/0 text-white'} ${mobile ? ' ' : 'duration-500'} text-white w-full md:h-[90px] h-[70px] flex justify-between items-center fixed z-50 mx-auto`}>
+      <div className={`text-3xl ${color || mobile ? 'md:bg-[#565cf2]/90 bg-[#13153f] backdrop-blur-sm' : 'bg-[#99ccff]/0 text-white'} ${mobile ? ' ' : 'duration-500'} text-white w-full md:h-[60px] h-[50px] flex justify-between items-center fixed z-50 mx-auto`}>
         <div className='flex justify-between items-center z-50 w-[1280px] relative mx-auto'>
 
           <div className='pl-5'>
@@ -30,7 +30,7 @@ const Navbar = () => {
           </Link>
           </div>
 
-          <div className='md:flex justify-between items-center pr-5 text-[20px] font-semibold w-[480px] hidden select-none'>
+          <div className='md:flex justify-between items-center pr-5 text-[18px] font-semibold w-[420px] hidden select-none'>
             <Link onClick={() => setMobile(!mobile)} className="cursor-pointer" to="/" spy={true} smooth={true} offset={0} duration={500}>Home</Link>
             <Link onClick={() => setMobile(!mobile)} className="cursor-pointer" to="about" spy={true} smooth={true} offset={0} duration={500}>About</Link>
             <Link onClick={() => setMobile(!mobile)} className="cursor-pointer" to="services" spy={true} smooth={true} offset={0} duration={500}>Services</Link>
@@ -47,7 +47,7 @@ const Navbar = () => {
 
       {
         mobile ? 
-        <div className='z-10 fixed top-[70px] bg-[#13153f] h-[400px] text-[25px] font-semibold w-full flex flex-col text-white justify-center items-center md:hidden'>
+        <div className='z-10 fixed top-[50px] bg-[#13153f] h-[300px] text-[25px] font-semibold w-full flex flex-col text-white justify-center items-center md:hidden'>
             <h1 className=' w-full border-b-2 border-[#6b8cf5]'>
               <Link onClick={() => setMobile(!mobile)} className="cursor-pointer ml-3" to="/" spy={true} smooth={true} offset={0} duration={500}>Home</Link>
             </h1>
@@ -64,7 +64,7 @@ const Navbar = () => {
               <Link onClick={() => setMobile(!mobile)} className="cursor-pointer ml-3" to="work" spy={true} smooth={true} offset={0} duration={500}>Our Work</Link>
             </h1>
 
-            <h1 className=' w-full border-b-2 border-[#6b8cf5] pt-[18px]'>
+            <h1 className=' w-full pt-[18px]'>
               <Link onClick={() => setMobile(!mobile)} className="cursor-pointer ml-3" to="contact" spy={true} smooth={true} offset={0} duration={500}>Contact</Link>
             </h1>
         </div> : 
